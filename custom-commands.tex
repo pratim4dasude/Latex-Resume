@@ -1,0 +1,63 @@
+\definecolor {DBlue}{RGB}{0,0,51}
+\definecolor {Plane}{RGB}{255,0,0}
+
+\definecolor {Grey}{RGB}{100,100,100}
+
+
+
+%-------------------------%
+% Custom commands
+%  content in 
+
+\newcommand{\resumeItem}[1]{
+  \item[\small\color{Dot}{\textbullet}]\small{
+  % \color{Plane} %%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % \fontsize{1pt}{5pt}
+    \color{Grey}{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    % \color{Plane} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+      \color{Hblue}\fontsize{12pt}{8pt}\normalfont{#1} &  \color{lblue}\small{#2}  \\
+      \hspace{2px}
+      % \color{Plane} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \color{Grey}\normalfont{#3} & \normalfont{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+
+    \item
+    % \fontsize{12pt}{8pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \hspace{2px}        
+      \color{Grey}\normalfont{#1} & \normalfont{ #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    % \color{Plane}  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{48, 52, 114}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+

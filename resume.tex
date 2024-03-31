@@ -1,0 +1,139 @@
+%-------------------------
+% Resume in Latex
+% Author : Audric Serador
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[11pt]{article}
+% \documentclass[]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{geometry}
+\geometry{left=-1.5cm,right=1.25cm,top=0.1cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\definecolor {Plane}{RGB}{255,0,0}
+\definecolor {Head}{RGB}{2,41,84}
+\definecolor {SEC}{RGB}{1,31,75}
+
+\definecolor {SG}{RGB}{100,100,100}
+
+\definecolor {Pgrey}{RGB}{68,58,149}
+% \definecolor {Hblue}{RGB}{3,57,108}
+\definecolor {Hblue}{RGB}{2,41,84}
+
+\definecolor {lblue}{RGB}{52,86,120}
+\definecolor {Dot}{RGB}{1,35,69}
+
+\definecolor {DGrey}{RGB}{60,60,60}
+
+
+% \usepackage{fontspec}
+% \usepackage[T1]{fontenc}
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in}
+% \addtolength{\bottommargin}{-.5in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\color{SEC}
+\vspace{-4pt}
+  \scshape
+  % \fontspec[Path = font]{PublicSans-Black}
+  \raggedright
+  \fontsize{15pt}{13pt}
+  \fontseries{l}\selectfont}{}{0em}{}[\color{SEC}\titlerule\vspace{-2pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% 666666666666666666666666666666666666666666666666
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tikz}
+
+
+\usepackage{amsmath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%-------------------------%
+% Custom commands
+\begin{document}
+\include{custom-commands}
+
+
+
+
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+%----------HEADING----------%
+\input{src/heading}
+
+%-----------EXPERIENCE-----------%
+\vspace{-7mm}
+\input{src/experience}
+
+%-----------PROJECTS-----------%
+\vspace{-3mm}
+\input{src/projects}
+
+%-----------EDUCATION-----------%
+\vspace{-3mm}
+\input{src/education.tex}
+
+%-----------SKILLS-----------%
+\vspace{-3mm}
+\input{src/skills.tex}
+
+%-----------Online profile-----------%
+\vspace{-3mm}
+\input{src/OnlineProfile.tex}
+
+%-------------------------------------------%
+
+\end{document}
